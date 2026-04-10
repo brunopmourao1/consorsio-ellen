@@ -1,0 +1,413 @@
+/* Specialist Editorial Luxe Styles */
+
+.specialist-page {
+  padding-top: 90px;
+}
+
+.specialist-main {
+  background-color: var(--color-background);
+}
+
+
+/* 1. HERO SECTION */
+.specialist-hero {
+  padding: 100px 0 120px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: var(--spacing-3xl);
+  align-items: flex-end;
+}
+
+.hero-headline {
+  font-size: clamp(2rem, 8vw, 6rem);
+  line-height: 0.9;
+  font-weight: 700;
+  color: var(--color-primary-container);
+  letter-spacing: -0.05em;
+  margin-bottom: var(--spacing-xl);
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.6;
+  max-width: 600px;
+  color: var(--color-text-secondary);
+}
+
+.serif-italic {
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.section-tag {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-accent-dim);
+  margin-bottom: var(--spacing-lg);
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+}
+
+.portrait-container {
+  aspect-ratio: 4 / 5;
+  background-color: var(--color-surface-container-high);
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+}
+
+.portrait-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.7s ease;
+}
+
+.portrait-image:hover {
+  filter: grayscale(0%);
+}
+
+/* 2. TICKER SECTION */
+.credentials-ticker {
+  background-color: var(--color-surface-container-low);
+  padding: 48px 0;
+  margin-bottom: 120px;
+}
+
+.ticker-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.ticker-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ticker-brand {
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  font-size: 2.5rem;
+  color: var(--color-tertiary-fixed-dim);
+}
+
+.ticker-value {
+  font-family: 'Newsreader', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-primary-container);
+}
+
+.ticker-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  color: var(--color-text-muted);
+}
+
+/* 3. BIOGRAPHY SECTION */
+.biography-section {
+  padding-bottom: 160px;
+}
+
+.bio-asymmetric-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.bio-headline {
+  font-size: 2.5rem;
+  color: var(--color-primary-container);
+  margin-bottom: 48px;
+}
+
+.bio-copy p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  margin-bottom: 32px;
+}
+
+.bio-manifesto-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.manifesto-card {
+  padding: 48px;
+  transition: transform 0.3s ease;
+}
+
+.manifesto-card.dark {
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary);
+}
+
+.manifesto-card.surface {
+  background-color: var(--color-surface-container-highest);
+  color: var(--color-primary-container);
+  margin-top: 32px;
+  margin-left: -48px; /* Intentional Asymmetry */
+}
+
+.manifesto-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+  color: var(--color-accent);
+}
+
+.manifesto-card h3 {
+  font-size: 1.75rem;
+  margin-bottom: 16px;
+}
+
+.manifesto-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+/* 4. MANIFESTO (DARK) SECTION */
+.manifesto-section {
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary);
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.manifesto-header {
+  margin-bottom: 80px;
+}
+
+.manifesto-tag {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-accent);
+  margin-bottom: 16px;
+}
+
+.manifesto-headline {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.manifesto-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 64px;
+}
+
+.manifesto-item .accent-line {
+  height: 1px;
+  width: 48px;
+  background-color: var(--color-accent);
+  margin-bottom: 24px;
+}
+
+.manifesto-item h4 {
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+}
+
+.manifesto-item p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--color-on-primary-fixed-variant);
+}
+
+/* 5. CTA SECTION */
+.cta-banner {
+  padding: 120px 0;
+}
+
+.cta-headline {
+  font-size: 3.5rem;
+  color: var(--color-primary-container);
+  margin-bottom: 32px;
+}
+
+.cta-subheadline {
+  font-size: 1.25rem;
+  color: var(--color-text-secondary);
+  max-width: 800px;
+  margin: 0 auto 48px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 16px 40px;
+  font-weight: 700;
+  text-transform: none;
+  transition: opacity 0.3s;
+}
+
+.btn-secondary {
+  background-color: var(--color-surface-container-high);
+  color: var(--color-primary);
+  padding: 16px 40px;
+  font-weight: 700;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  /* Área de toque mínima de 44px */
+  .btn-primary,
+  .btn-secondary {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .manifesto-card {
+    padding: 24px;
+  }
+
+  .bio-headline {
+    font-size: 1.75rem;
+  }
+
+  .manifesto-headline {
+    font-size: 2rem;
+  }
+
+  .cta-headline {
+    font-size: 2rem;
+  }
+
+  .ticker-brand {
+    font-size: 1.75rem;
+  }
+
+  .ticker-value {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .specialist-hero {
+    padding: 48px 0;
+  }
+
+  .ticker-flex {
+    gap: 20px;
+  }
+
+  .ticker-brand,
+  .ticker-value {
+    font-size: 1.25rem;
+  }
+
+  .manifesto-card {
+    padding: 20px;
+  }
+}
+
+/* TOUCH: remove grayscale em dispositivos sem hover (mobile/tablet) */
+@media (hover: none) {
+  .portrait-image {
+    filter: grayscale(0%);
+  }
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 1024px) {
+  .hero-grid, .bio-asymmetric-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .manifesto-card.surface {
+    margin-left: 0;
+  }
+
+  .manifesto-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .hero-headline, .cta-headline, .manifesto-headline {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .specialist-hero {
+    padding: 60px 0;
+  }
+
+  .credentials-ticker {
+    padding: 32px 0;
+    margin-bottom: 64px;
+  }
+
+  .biography-section {
+    padding-bottom: 80px;
+  }
+
+  .manifesto-section {
+    padding: 64px 0;
+  }
+
+  .cta-banner {
+    padding: 64px 0;
+  }
+
+  .hero-headline {
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
+    letter-spacing: -0.03em;
+  }
+
+  .hero-description {
+    font-size: 1.15rem;
+  }
+
+  .manifesto-card {
+    padding: 32px;
+  }
+
+  .ticker-flex {
+    justify-content: center;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    max-width: 320px;
+  }
+}

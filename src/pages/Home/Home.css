@@ -1,0 +1,578 @@
+/* HOME PAGE CLEAN RECONSTRUCTION - VERSION 6.0 */
+
+.home-page-v6 {
+  overflow-x: hidden;
+  background-color: #FFFFFF;
+  padding-top: 90px; /* compensar navbar fixa */
+}
+
+/* CONTAINER PADRÃO */
+.hero-container-standard {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+  width: 100%;
+}
+
+.container-7xl {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+  width: 100%;
+}
+
+/* 1. HERO SECTION CLEAN */
+.hero-section-clean {
+  min-height: 850px;
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 80px 0;
+  position: relative;
+}
+
+.hero-grid-main {
+  display: grid !important;
+  grid-template-columns: 1.4fr 1fr; /* 2 colunas lado a lado no desktop */
+  gap: 80px;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-text-block {
+  z-index: 10;
+}
+
+.hero-headline-luxe {
+  font-family: 'Newsreader', serif;
+  font-size: clamp(2rem, 5vw, 5rem);
+  line-height: 0.95;
+  color: #0D1C32; /* Navy Navy */
+  letter-spacing: -0.06em; /* Tracking ultra-tighter conforme Stitch */
+  font-weight: 500;
+  margin-bottom: 48px;
+}
+
+.highlight-serif {
+  font-style: italic;
+  color: #E9C176; /* Dourado Stitch mantido */
+}
+
+.hero-cta-btn-black {
+  display: inline-block;
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 22px 52px;
+  border-radius: 2px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: none;
+}
+
+.hero-cta-btn-black:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.hero-image-block {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-portrait-frame {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  aspect-ratio: 4 / 5;
+  background-color: #F0EDED;
+  border-radius: 2px;
+  overflow: visible;
+  margin-bottom: 40px; /* espaço para o badge que extravasa 24px abaixo */
+}
+
+.hero-main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+  display: block;
+}
+
+.hero-img-overlay-soft {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(13, 28, 50, 0.05), transparent);
+  border-radius: 2px;
+}
+
+.hero-floating-badge-v6 {
+  position: absolute;
+  bottom: -24px;
+  left: -24px;
+  background-color: #FFE9B7; /* Tom creme exato do Stitch */
+  padding: 24px 40px;
+  box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.06);
+  z-index: 20;
+}
+
+.badge-text-serif {
+  font-family: 'Newsreader', serif;
+  font-size: 1.6rem;
+  color: #5D4201; /* Marrom escuro */
+  font-style: italic;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+/* 2. METHODOLOGY SECTION */
+.methodology-section {
+  padding: 120px 0;
+  background-color: #F6F3F2;
+}
+
+.methodology-flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 96px;
+  align-items: center;
+}
+
+.methodology-tag {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #E9C176;
+  margin-bottom: 24px;
+}
+
+.methodology-title {
+  font-family: 'Newsreader', serif;
+  font-size: 3rem;
+  line-height: 1.1;
+  color: #0D1C32;
+}
+
+.methodology-copy p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #44474D;
+  margin-bottom: 32px;
+}
+
+.methodology-footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.accent-line {
+  height: 1px;
+  width: 48px;
+  background-color: #E9C176;
+}
+
+.footer-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #0D1C32;
+}
+
+/* 3. SPECIALIST PREVIEW */
+.specialist-preview {
+  padding: 120px 0;
+  background-color: #FFFFFF;
+}
+
+.preview-split {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 64px;
+}
+
+.preview-image-box {
+  flex: 1;
+}
+
+.preview-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 2px;
+  transition: filter 0.7s;
+}
+
+.grayscale-hover {
+  filter: grayscale(100%);
+}
+
+.preview-image-box:hover .grayscale-hover {
+  filter: grayscale(0%);
+}
+
+.preview-content-box {
+  flex: 1;
+}
+
+.section-subtitle-italic {
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  font-size: 2rem;
+  color: #0D1C32;
+  margin-bottom: 24px;
+}
+
+.preview-text {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #44474D;
+  margin-bottom: 32px;
+}
+
+.preview-link-cta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #000000;
+  text-decoration: none;
+}
+
+.preview-link-cta .material-symbols-outlined {
+  font-size: 1rem;
+  transition: transform 0.3s;
+}
+
+.preview-link-cta:hover .material-symbols-outlined {
+  transform: translateX(8px);
+}
+
+/* 4. SOLUTIONS BRIEF */
+.solutions-brief {
+  padding: 120px 0;
+  background-color: #F0EDED;
+}
+
+.section-headline-serif {
+  font-family: 'Newsreader', serif;
+  font-size: 2.5rem;
+  color: #0D1C32;
+}
+
+.section-subheadline-v5 {
+  font-size: 1.1rem;
+  color: #44474D;
+  margin-top: 16px;
+  font-weight: 300;
+  margin-bottom: 64px;
+}
+
+.solutions-bento-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* 5. EDITORIAL PENSAMENTO PREVIEW */
+.editorial-thought-preview {
+  padding: 120px 0;
+}
+
+.editorial-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 64px;
+}
+
+.editorial-link-alt {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #000000;
+  border-bottom: 2px solid #E9C176;
+  padding-bottom: 4px;
+  text-decoration: none;
+}
+
+.home-editorial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  width: 100%;
+}
+
+.editorial-card-item {
+  cursor: pointer;
+}
+
+.card-media {
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 2px;
+  margin-bottom: 24px;
+}
+
+.editorial-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s;
+}
+
+.editorial-card-item:hover .editorial-img {
+  transform: scale(1.05);
+}
+
+.item-tag-v5 {
+  display: block;
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #E9C176;
+  margin-bottom: 12px;
+}
+
+.item-title-link {
+  text-decoration: none;
+}
+
+.item-title-link h3 {
+  font-family: 'Newsreader', serif;
+  font-size: 1.4rem;
+  color: #0D1C32;
+  margin-bottom: 16px;
+  line-height: 1.3;
+  transition: color 0.3s;
+}
+
+.editorial-card-item:hover .item-title-link h3 {
+  color: #E9C176;
+}
+
+.item-excerpt {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #44474D;
+}
+
+/* 6. FUNDAMENTOS EDITORIAL */
+.fundamentals-editorial {
+  padding: 120px 0;
+  background-color: #EAE7E7;
+}
+
+.pillars-editoral-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background-color: rgba(0,0,0,0.1);
+}
+
+.pillar-editorial-item {
+  background-color: #EAE7E7;
+  padding: 48px;
+}
+
+.pillar-title-italic {
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  font-size: 1.75rem;
+  color: #0D1C32;
+  margin-bottom: 24px;
+}
+
+.pillar-desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #44474D;
+}
+
+.pillar-list-v2 {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pillar-list-v2 li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #0D1C32;
+}
+
+.bullet {
+  width: 6px;
+  height: 6px;
+  background-color: #E9C176;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  /* Área de toque mínima de 44px para links pequenos */
+  .preview-link-cta {
+    padding: 14px 0;
+    min-height: 44px;
+  }
+
+  .editorial-link-alt {
+    padding: 12px 0;
+    display: inline-block;
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-headline-luxe {
+    font-size: 2.25rem;
+    letter-spacing: -0.02em;
+  }
+
+  .methodology-title {
+    font-size: 2rem;
+  }
+
+  .section-headline-serif {
+    font-size: 1.75rem;
+  }
+
+  .pillar-editorial-item {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero-section-clean {
+    padding: 48px 0;
+  }
+
+  .hero-floating-badge-v6 {
+    padding: 12px 20px;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .badge-text-serif {
+    font-size: 1rem;
+  }
+
+  .hero-cta-btn-black {
+    padding: 18px 32px;
+    font-size: 0.75rem;
+    letter-spacing: 0.15rem;
+  }
+
+  .solutions-bento-grid {
+    gap: 24px;
+  }
+}
+
+/* TOUCH: remove grayscale em dispositivos sem hover (mobile/tablet) */
+@media (hover: none) {
+  .grayscale-hover {
+    filter: grayscale(0%);
+  }
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 1024px) {
+  .hero-grid-main {
+    gap: 40px;
+  }
+  .hero-headline-luxe {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section-clean {
+    min-height: auto;
+    padding: 60px 0;
+  }
+
+  .hero-grid-main {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .hero-text-block, .hero-image-block {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .methodology-flex, .preview-split, .home-editorial-grid, .pillars-editoral-grid, .solutions-bento-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .methodology-section {
+    padding: 64px 0;
+  }
+
+  .specialist-preview {
+    padding: 64px 0;
+  }
+
+  .solutions-brief {
+    padding: 64px 0;
+  }
+
+  .editorial-thought-preview {
+    padding: 64px 0;
+  }
+
+  .fundamentals-editorial {
+    padding: 64px 0;
+  }
+
+  .pillar-editorial-item {
+    padding: 32px;
+  }
+
+  .hero-headline-luxe {
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
+    letter-spacing: -0.03em;
+  }
+
+  /* Badge: remove offsets negativos no mobile para não sair da tela */
+  .hero-floating-badge-v6 {
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 16px 28px;
+    white-space: nowrap;
+  }
+
+  .badge-text-serif {
+    font-size: 1.2rem;
+  }
+
+  .hero-portrait-frame {
+    margin-bottom: 48px; /* mais espaço para o badge centralizado */
+  }
+
+  .md-only {
+    display: none;
+  }
+}

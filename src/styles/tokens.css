@@ -1,0 +1,52 @@
+:root {
+  /* Cores Principais - Sincronização Absoluta com Stitch */
+  --color-primary: #000000;         /* Preto Soberano */
+  --color-on-primary: #FFFFFF;
+  --color-primary-container: #0D1C32;
+  
+  /* Acentos (Tertiary in Stitch) */
+  --color-accent: #E9C176;          /* Dourado Editorial */
+  --color-accent-dim: #5D4201;      
+  
+  /* Superfícies */
+  --color-background: #FCF9F8;      /* Off-white Estilo Vellum */
+  --color-surface: #FCF9F8;
+  --color-surface-container: #F0EDED; 
+  --color-surface-container-low: #F6F3F2;
+  --color-surface-container-high: #EAE7E7;
+  --color-surface-container-highest: #E5E2E1;
+  
+  /* Textos */
+  --color-text-primary: #1B1B1B;    /* Carvão */
+  --color-text-secondary: #44474D;
+  --color-text-muted: #75777E;
+  
+  /* Feedback */
+  --color-error: #BA1A1A;
+  
+  /* Arredondamento (Stitch Roundness) */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-full: 9999px;
+  
+  /* Espaçamento */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-3xl: 64px;
+
+  /* Sincronização Extra Stitch */
+  --color-on-primary-fixed-variant: #39475F;
+  --color-tertiary-fixed-dim: #E9C176;
+
+  /* Variáveis complementares — usadas em Contact, Blog, Solutions */
+  --color-on-primary-container: #39475F;
+  --color-secondary-container: #E5E2E1;
+  --color-on-secondary-container: #1B1B1B;
+  --color-on-tertiary-fixed: #5D4201;
+  --color-on-surface-variant: #44474D;
+  --color-tertiary-fixed: #FFE9B7;
+}

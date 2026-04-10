@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#eae7e7",
+                    "on-primary-fixed-variant": "#39475f",
+                    "on-primary-container": "#76849f",
+                    "secondary-container": "#e2dfde",
+                    "inverse-surface": "#313030",
+                    "background": "#fcf9f8",
+                    "surface-container": "#f0eded",
+                    "surface-tint": "#515f78",
+                    "outline-variant": "#c5c6cd",
+                    "on-tertiary-fixed": "#261900",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed-variant": "#5d4201",
+                    "on-background": "#1b1b1b",
+                    "surface-variant": "#e5e2e1",
+                    "tertiary-fixed-dim": "#e9c176",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed": "#0d1c32",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed": "#1b1b1b",
+                    "primary-fixed-dim": "#b9c7e4",
+                    "tertiary": "#000000",
+                    "inverse-primary": "#b9c7e4",
+                    "tertiary-fixed": "#ffdea5",
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#f3f0ef",
+                    "surface-container-highest": "#e5e2e1",
+                    "on-surface-variant": "#44474d",
+                    "on-tertiary-container": "#a17f3b",
+                    "tertiary-container": "#261900",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#5f5e5e",
+                    "secondary-fixed": "#e5e2e1",
+                    "on-secondary-container": "#636262",
+                    "surface-container-low": "#f6f3f2",
+                    "primary-fixed": "#d6e3ff",
+                    "outline": "#75777e",
+                    "surface": "#fcf9f8",
+                    "primary-container": "#0d1c32",
+                    "primary": "#000000",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed-variant": "#474746",
+                    "surface-bright": "#fcf9f8",
+                    "on-error-container": "#93000a",
+                    "surface-dim": "#dcd9d9",
+                    "on-surface": "#1b1b1b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": [
+                            "Newsreader"
+                    ],
+                    "body": [
+                            "Manrope"
+                    ],
+                    "label": [
+                            "Manrope"
+                    ]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #fcf9f8; color: #1b1b1b; }
+        .font-serif { font-family: 'Newsreader', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased">
+<!-- TopNavBar -->
+<nav class="bg-surface/80 dark:bg-slate-900/80 backdrop-blur-md docked full-width top-0 sticky z-50 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="font-serif text-2xl italic text-primary-container dark:text-slate-100 tracking-tight">
+                Boutique Financeira
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-primary-container border-b-2 border-tertiary-fixed-dim pb-1 font-semibold Head-sm tracking-wide" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-primary-container transition-colors text-sm tracking-wide" href="#">A Especialista</a>
+<a class="text-on-surface-variant hover:text-primary-container transition-colors text-sm tracking-wide" href="#">Soluções</a>
+<a class="text-on-surface-variant hover:text-primary-container transition-colors text-sm tracking-wide" href="#">Blog</a>
+<a class="text-on-surface-variant hover:text-primary-container transition-colors text-sm tracking-wide" href="#">Contato</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-md font-medium text-sm tracking-wider hover:opacity-80 transition-opacity duration-300">
+                Consultoria
+            </button>
+</div>
+</nav>
+<main>
+<!-- Section 1: Hero Banner -->
+<section class="relative min-h-[870px] flex items-center overflow-hidden bg-surface">
+<div class="max-w-7xl mx-auto px-8 w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center py-20">
+<div class="md:col-span-7 z-10">
+<h1 class="font-serif text-5xl md:text-7xl leading-[1.1] text-primary-container mb-8 -tracking-widest">
+                        Consultoria estratégica em consórcios para quem busca investir com <span class="italic text-tertiary-fixed-dim">inteligência e segurança.</span>
+</h1>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-md text-sm font-semibold tracking-widest uppercase hover:scale-95 transition-transform duration-200">
+                        Conhecer Soluções
+                    </button>
+</div>
+<div class="md:col-span-5 relative">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden rounded-sm relative">
+<img class="w-full h-full object-cover" data-alt="Professional portrait of Ellen Stevão, a confident financial expert in a sophisticated office setting, soft natural light, high-end editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFp9-7hk4ClZ_6_d_nsLFY6EotKd93VA6tJe-GBDc-F8S6mEXzuPHBLCME-m49TeI4fs-yBjGG-sREogUjiOuJzMfqCduTadauSL0umZ77diskERFsqdJ8gLabaYg2VzNDE7TZjxysbUIllRnooyyRajLt-cn8JTo4cRwaFMrdGlc6gJSx73vnwW5Z8IqgKaJbKhnhwvkwXy2NFBlhnu128rAgRoqSl_wJ60ZzCp0uhx4c30wDoQ8x9k1tzluRX0MUcMc49tDpuE4k"/>
+<!-- Decorative overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/20 to-transparent"></div>
+</div>
+<!-- Asymmetric element -->
+<div class="absolute -bottom-6 -left-6 bg-tertiary-fixed p-8 hidden md:block">
+<p class="font-serif italic text-2xl text-on-tertiary-fixed tracking-tight">Experiência Insper.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Consórcio Estratégico -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div>
+<span class="text-tertiary-fixed-dim font-bold tracking-[0.2em] text-xs uppercase mb-4 block">Metodologia Exclusiva</span>
+<h2 class="font-serif text-4xl md:text-5xl text-primary-container mb-8 leading-tight">
+                            Inteligência Financeira para Alavancagem Patrimonial
+                        </h2>
+</div>
+<div class="space-y-6">
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                            Consultoria independente com mais de 10 anos de experiência e formação em Gestão Financeira pelo Insper. Projetamos a melhor estratégia de contemplação para o seu perfil, sem as taxas abusivas do mercado tradicional.
+                        </p>
+<div class="flex items-center gap-4 py-4">
+<div class="h-[1px] w-12 bg-tertiary-fixed-dim"></div>
+<p class="text-sm font-semibold tracking-widest uppercase text-primary-container">Excelência Técnica</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Brief Intro (A Especialista) -->
+<section class="py-32 bg-surface overflow-hidden">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row-reverse gap-16 items-center">
+<div class="w-full md:w-1/2">
+<div class="relative group">
+<img class="w-full aspect-square object-cover rounded-sm grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Modern business woman working in a high-end minimalist office, focused and professional, warm sunset lighting coming through large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfwwh-85r2V_wjUe5BYJiV3G_ap8IYeEl5Au8he2Uci3WS5Vc9xzk2MpDecAc1_3IRWezsNx5-I8GUpnt0wfWKQVLqgZYirkjpb2IHF3ldKQOZ1zfwOTnLF4vPve-BRq9X2mO_Xuz7YYXJa_Wo2smm3FseORtjaGmb3StI2HW5BFEXVVNyRfonjV5ZvBNvXmLi2twgTgIAcN9szZhSa8htx6MxGPOgW1OKFIYjSq9zn7vCAHAuGyrZXW4RTSVNuVDkBLWvPdV5lGKr"/>
+</div>
+</div>
+<div class="w-full md:w-1/2 pr-0 md:pr-12">
+<h3 class="font-serif text-3xl text-primary-container mb-6 italic">A Especialista</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed text-lg">
+                            Ellen Stevão combina o rigor técnico do mercado financeiro com uma visão humanizada de planejamento. Sua jornada no Insper moldou uma abordagem onde cada número conta uma história de crescimento sustentável.
+                        </p>
+<a class="inline-flex items-center gap-2 group text-primary font-bold tracking-widest text-xs uppercase" href="#">
+                            Ler Biografia Completa
+                            <span class="material-symbols-outlined text-sm group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Soluções Preview -->
+<section class="py-32 bg-surface-container">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-20">
+<h2 class="font-serif text-4xl text-primary-container">Estratégias Sob Medida</h2>
+<p class="text-on-surface-variant mt-4 font-light">Soluções estruturadas para diferentes horizontes de investimento.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="bg-surface p-10 rounded-sm hover:bg-surface-container-highest transition-colors duration-300 flex flex-col h-full">
+<span class="material-symbols-outlined text-tertiary-fixed-dim mb-6 text-3xl" data-weight="fill">home_work</span>
+<h4 class="font-serif text-xl text-primary-container mb-4">Imobiliário</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-8 flex-grow">Aquisição, construção e alavancagem através de imóveis residenciais e comerciais.</p>
+<a class="text-[10px] font-bold uppercase tracking-widest border-b border-primary/20 pb-1 w-fit" href="#">Ver Detalhes</a>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface p-10 rounded-sm hover:bg-surface-container-highest transition-colors duration-300 flex flex-col h-full">
+<span class="material-symbols-outlined text-tertiary-fixed-dim mb-6 text-3xl" data-weight="fill">agriculture</span>
+<h4 class="font-serif text-xl text-primary-container mb-4">Frotas/Agronegócio</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-8 flex-grow">Renovação de maquinário e expansão de frotas com planejamento de fluxo de caixa.</p>
+<a class="text-[10px] font-bold uppercase tracking-widest border-b border-primary/20 pb-1 w-fit" href="#">Ver Detalhes</a>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface p-10 rounded-sm hover:bg-surface-container-highest transition-colors duration-300 flex flex-col h-full">
+<span class="material-symbols-outlined text-tertiary-fixed-dim mb-6 text-3xl" data-weight="fill">directions_car</span>
+<h4 class="font-serif text-xl text-primary-container mb-4">Veículos Premium</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-8 flex-grow">Estratégias específicas para o mercado de luxo e automóveis de alto valor.</p>
+<a class="text-[10px] font-bold uppercase tracking-widest border-b border-primary/20 pb-1 w-fit" href="#">Ver Detalhes</a>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface p-10 rounded-sm hover:bg-surface-container-highest transition-colors duration-300 flex flex-col h-full">
+<span class="material-symbols-outlined text-tertiary-fixed-dim mb-6 text-3xl" data-weight="fill">account_balance</span>
+<h4 class="font-serif text-xl text-primary-container mb-4">Estruturação de Ativos</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-8 flex-grow">Proteção patrimonial e sucessão através de cotas estruturadas de consórcio.</p>
+<a class="text-[10px] font-bold uppercase tracking-widest border-b border-primary/20 pb-1 w-fit" href="#">Ver Detalhes</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Blog Preview -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="font-serif text-4xl text-primary-container">Pensamento Editorial</h2>
+<p class="text-on-surface-variant mt-2">Insights sobre o mercado de consórcios e macroeconomia.</p>
+</div>
+<a class="hidden md:block text-xs font-bold uppercase tracking-[0.2em] text-primary border-b-2 border-tertiary-fixed-dim pb-1" href="#">Ver Blog Completo</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<article class="group cursor-pointer">
+<div class="aspect-[16/9] overflow-hidden mb-6 rounded-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up of financial documents and a fountain pen on a mahogany desk, elegant office atmosphere with warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqquzcUMYw1LNzM9LHxl417QmxwRzSQ2pKC2z-A3HmnL7EnQGOUGVW7QF0Yewv2LJ8QoDEVuqQ1vn55vdJ5Anq_nOvQhnH2GcvBogyrA-mLFd5uM0o98k8qBJxGbdrUAA9Y4PEW2qx_O2l7_bE5rz0iHRX6In0PhE9Gp408DY2LXov9NlWrwP82O0OHAHDh2vGKG_4ZiV8dN-8O2PBCCHhEp5wHYxqOecK_u41AYfKHPgqJYgiyf0ZnN1FBGrLSmoBYvynF3HgnNUN"/>
+</div>
+<span class="text-[10px] font-bold uppercase tracking-widest text-tertiary-fixed-dim mb-3 block">Mercado</span>
+<h3 class="font-serif text-xl text-primary-container group-hover:text-tertiary-fixed-dim transition-colors mb-4">O impacto da Selic no custo de oportunidade do consórcio</h3>
+<p class="text-sm text-on-surface-variant line-clamp-2">Uma análise técnica sobre como os juros influenciam a decisão de investir através de grupos de consórcio...</p>
+</article>
+<article class="group cursor-pointer">
+<div class="aspect-[16/9] overflow-hidden mb-6 rounded-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Digital tablet showing financial charts and stock market data, professional business context, clean aesthetics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBsl9EKgJ-EcTzw0B04u6xN6wDu-crGPywMKX_Tb9XlGLDUB_r8mqNS4F1N7Ccxrxbwfl5ghtNuHe4lQbqSvOCMpcCqVSCCdAjoBQtAXufVdUM89Jovthg2o7tBXdj50umRObATu4I-QPqnOZQAJ-aKItJy7Q3-36ur71oMoNSOimmbzwu_hveBGcAXvL2YvzhGeAX1_D83f1LPOgp4_AUOD-jMww3ssLlQk2vWzhUZLH9pEkJvjR5EM7dcbiOdOmdSEnei0y1PrcZ"/>
+</div>
+<span class="text-[10px] font-bold uppercase tracking-widest text-tertiary-fixed-dim mb-3 block">Estratégia</span>
+<h3 class="font-serif text-xl text-primary-container group-hover:text-tertiary-fixed-dim transition-colors mb-4">Lance Livre vs. Lance Fixo: Qual o melhor caminho?</h3>
+<p class="text-sm text-on-surface-variant line-clamp-2">Entenda a matemática por trás das modalidades de lance e como acelerar sua contemplação com segurança.</p>
+</article>
+<article class="group cursor-pointer">
+<div class="aspect-[16/9] overflow-hidden mb-6 rounded-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern architectural lines of a skyscraper reflecting the blue sky, representing growth and institutional strength" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_T_AV_ksODrWSS4oRfejMbEOz2eBpEPyELH9l9LJjA6wHhDJi5EnMRA6Y-bX7gVEqOsqOGBYNms4polkfdo2h_P8k6MiwsRYq_gOLJTVze50-JZNr3BsX9w6zGT5nhjhLw14FrM0fLy_e8ZpOCjRAPYd7Ba3NNogN1PwDrY7KgCp4ykyI8MDMAj1I8TZknWauvcAR4rkIy1JdE-EoMHj5Ux70_k8NbFE6nLVSzuL7a6gZPEgHqvVzPZiGXkKfgCkRIaJT_yr3JhB9"/>
+</div>
+<span class="text-[10px] font-bold uppercase tracking-widest text-tertiary-fixed-dim mb-3 block">Patrimônio</span>
+<h3 class="font-serif text-xl text-primary-container group-hover:text-tertiary-fixed-dim transition-colors mb-4">Consórcio como ferramenta de sucessão familiar</h3>
+<p class="text-sm text-on-surface-variant line-clamp-2">Descubra como estruturar a transferência de ativos de forma inteligente utilizando as cotas de consórcio imobiliário.</p>
+</article>
+</div>
+</div>
+</section>
+<!-- Section 6: Nossos Fundamentos -->
+<section class="py-32 bg-surface-container-high relative">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-1px bg-outline-variant/15">
+<div class="bg-surface-container-high p-12">
+<h3 class="font-serif text-2xl text-primary-container mb-6 italic">O que nos move</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                            A democratização da inteligência financeira de alto nível, permitindo que indivíduos construam patrimônio de forma soberana e estratégica.
+                        </p>
+</div>
+<div class="bg-surface-container-high p-12">
+<h3 class="font-serif text-2xl text-primary-container mb-6 italic">Onde queremos chegar</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                            Ser a referência máxima em boutique de consórcios, reconhecida pela excelência técnica e pelo compromisso inegociável com o cliente.
+                        </p>
+</div>
+<div class="bg-surface-container-high p-12">
+<h3 class="font-serif text-2xl text-primary-container mb-6 italic">Nossos Pilares</h3>
+<ul class="space-y-4">
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 bg-tertiary-fixed-dim rounded-full"></span>
+<span class="text-xs font-bold uppercase tracking-widest">Independência</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 bg-tertiary-fixed-dim rounded-full"></span>
+<span class="text-xs font-bold uppercase tracking-widest">Rigor Técnico</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 bg-tertiary-fixed-dim rounded-full"></span>
+<span class="text-xs font-bold uppercase tracking-widest">Transparência Radical</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 bg-tertiary-fixed-dim rounded-full"></span>
+<span class="text-xs font-bold uppercase tracking-widest">Educação Financeira</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-900 dark:bg-black w-full pt-16 pb-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto">
+<div class="md:col-span-2">
+<div class="font-serif text-lg text-slate-100 mb-6">Boutique Financeira Editorial</div>
+<p class="text-slate-400 text-xs font-light leading-relaxed max-w-sm">
+                    Consultoria especializada em estratégias de consórcio para investidores institucionais e alta renda. Inteligência técnica para maximizar seu retorno patrimonial.
+                </p>
+</div>
+<div>
+<h5 class="text-slate-100 text-[10px] font-bold uppercase tracking-[0.2em] mb-6">Links Úteis</h5>
+<ul class="space-y-4">
+<li><a class="text-slate-400 hover:text-white transition-colors text-xs font-light" href="#">Privacidade</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors text-xs font-light" href="#">Termos de Uso</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors text-xs font-light" href="#">BCB</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors text-xs font-light" href="#">ABAC</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-slate-100 text-[10px] font-bold uppercase tracking-[0.2em] mb-6">Contato</h5>
+<p class="text-slate-400 text-xs font-light leading-relaxed mb-4">contato@boutiquefinanceira.com.br</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-slate-400 text-sm hover:text-white cursor-pointer">public</span>
+<span class="material-symbols-outlined text-slate-400 text-sm hover:text-white cursor-pointer">mail</span>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-400 text-[10px] font-light">© 2024 Boutique Financeira Editorial. Todos os direitos reservados.</p>
+<div class="flex gap-8">
+<span class="text-slate-500 text-[10px]">CNPJ 00.000.000/0001-00</span>
+<span class="text-slate-500 text-[10px]">Desenvolvido com Rigor Técnico</span>
+</div>
+</div>
+</footer>
+</body></html>

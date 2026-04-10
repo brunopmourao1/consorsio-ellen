@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pensamento Editorial - Boutique Financeira</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "primary-fixed-dim": "#b9c7e4",
+                        "primary-container": "#0d1c32",
+                        "on-tertiary-fixed-variant": "#5d4201",
+                        "tertiary-fixed-dim": "#e9c176",
+                        "on-background": "#1b1b1b",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#0d1c32",
+                        "background": "#fcf9f8",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#39475f",
+                        "tertiary-fixed": "#ffdea5",
+                        "outline": "#75777e",
+                        "outline-variant": "#c5c6cd",
+                        "inverse-on-surface": "#f3f0ef",
+                        "primary": "#000000",
+                        "on-secondary-fixed-variant": "#474746",
+                        "primary-fixed": "#d6e3ff",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-secondary-fixed": "#1b1b1b",
+                        "surface-container-high": "#eae7e7",
+                        "secondary-container": "#e2dfde",
+                        "secondary": "#5f5e5e",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-surface": "#1b1b1b",
+                        "surface-tint": "#515f78",
+                        "surface": "#fcf9f8",
+                        "on-secondary-container": "#636262",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#e5e2e1",
+                        "surface-container": "#f0eded",
+                        "on-tertiary-fixed": "#261900",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#76849f",
+                        "surface-bright": "#fcf9f8",
+                        "on-primary": "#ffffff",
+                        "surface-container-low": "#f6f3f2",
+                        "error-container": "#ffdad6",
+                        "tertiary": "#000000",
+                        "surface-dim": "#dcd9d9",
+                        "on-tertiary-container": "#a17f3b",
+                        "on-surface-variant": "#44474d",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "tertiary-container": "#261900",
+                        "inverse-surface": "#313030",
+                        "inverse-primary": "#b9c7e4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .serif-tight {
+            letter-spacing: -0.02em;
+        }
+        .editorial-gradient {
+            background: linear-gradient(to right, #0d1c32, #39475f);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-tertiary-fixed selection:text-on-tertiary-fixed">
+<!-- TopNavBar -->
+<header class="bg-[#fcf9f8]/80 dark:bg-[#0A192F]/80 backdrop-blur-md sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-7xl mx-auto">
+<div class="text-2xl font-serif italic text-[#0A192F] dark:text-[#fcf9f8] serif-tight">Boutique Financeira</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-[#39475f] dark:text-slate-400 font-medium hover:text-[#0A192F] dark:hover:text-white transition-colors duration-300" href="#">Mercado</a>
+<a class="text-[#39475f] dark:text-slate-400 font-medium hover:text-[#0A192F] dark:hover:text-white transition-colors duration-300" href="#">Estratégia</a>
+<a class="text-[#39475f] dark:text-slate-400 font-medium hover:text-[#0A192F] dark:hover:text-white transition-colors duration-300" href="#">Patrimônio</a>
+<a class="text-[#0A192F] dark:text-white border-b-2 border-[#e9c176] pb-1 font-bold" href="#">Sobre</a>
+<a class="text-[#39475f] dark:text-slate-400 font-medium hover:text-[#0A192F] dark:hover:text-white transition-colors duration-300" href="#">Contato</a>
+</nav>
+<div class="flex items-center space-x-6">
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-md font-medium text-sm tracking-wide hover:opacity-90 active:scale-95 transition-all">
+                    Consultoria
+                </button>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-8 pt-16 pb-24">
+<!-- Section Header -->
+<header class="mb-20 text-center md:text-left">
+<span class="font-label text-on-primary-container uppercase tracking-[0.2em] text-xs font-semibold">Análise de Especialista</span>
+<h1 class="font-headline text-6xl md:text-8xl mt-4 text-primary-container serif-tight font-light">Pensamento Editorial</h1>
+<p class="mt-6 text-on-surface-variant max-w-2xl text-lg font-light leading-relaxed">
+                Perspectivas profundas sobre gestão de ativos, estratégias de alavancagem e o cenário macroeconômico global para o investidor de alto padrão.
+            </p>
+</header>
+<!-- Featured Article: Bento Layout -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-24">
+<div class="lg:col-span-8 group cursor-pointer">
+<div class="relative overflow-hidden aspect-[16/9] bg-surface-container-low mb-8">
+<img class="w-full h-full object-cover grayscale-[30%] hover:scale-105 transition-transform duration-700" data-alt="Modern minimalist office space with floor to ceiling windows overlooking a foggy cityscape at dawn, soft blue lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4tl8cbr9LnqcNZdI3tOCGayhnSDCYoIeQqAeszTGD2P0amgWavpSUs2t-5xYONeRkS2hTx961kijNdhqBZTAEZOFxpWTlZqWfYgFx4V9xNrf2UoM_kAJbIxHvhsXdf8QLYaj-HJyf_RXUvwJ9Yq-0uISkh1-O8zL-MmHGmjiLpvtaMdNcgFVvEdd-ijGFCAaTE4q7vpLyzMuYhXXmrsPJT9Lf4i9mi4gFkS4-Q4VA6BUk3xqlX8XhlTCg9gNGierkro4Np07VjG-2"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/40 to-transparent"></div>
+</div>
+<div class="flex items-center space-x-4 mb-4">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed text-[10px] uppercase tracking-widest font-bold px-3 py-1 rounded-full">Destaque</span>
+<span class="text-on-surface-variant text-xs font-medium">12 min de leitura</span>
+</div>
+<h2 class="font-headline text-4xl md:text-5xl text-primary-container serif-tight mb-4 group-hover:underline decoration-tertiary-fixed-dim underline-offset-8">
+                    O Futuro do Crédito: Diversificação e a Nova Ordem Patrimonial
+                </h2>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-3xl">
+                    Uma análise detalhada sobre como as flutuações de juros estão redefinindo as prioridades de alocação em carteiras de private banking e o papel fundamental do planejamento imobiliário.
+                </p>
+</div>
+<aside class="lg:col-span-4 space-y-12 bg-surface-container-low p-8 rounded-sm">
+<div>
+<h3 class="font-headline text-2xl text-primary-container mb-6 border-b border-outline-variant/30 pb-4 serif-tight">Tópicos Recentes</h3>
+<ul class="space-y-6">
+<li class="group">
+<span class="text-[10px] text-on-primary-container uppercase font-bold tracking-tighter">Imobiliário</span>
+<h4 class="font-headline text-xl text-primary-container group-hover:text-on-primary-fixed-variant transition-colors">Yield vs. Valorização: O dilema de 2024.</h4>
+</li>
+<li class="group">
+<span class="text-[10px] text-on-primary-container uppercase font-bold tracking-tighter">Sucessão</span>
+<h4 class="font-headline text-xl text-primary-container group-hover:text-on-primary-fixed-variant transition-colors">Holding vs. Doação: Protegendo legados.</h4>
+</li>
+<li class="group">
+<span class="text-[10px] text-on-primary-container uppercase font-bold tracking-tighter">Global</span>
+<h4 class="font-headline text-xl text-primary-container group-hover:text-on-primary-fixed-variant transition-colors">Impacto do FED nas taxas de consórcio locais.</h4>
+</li>
+</ul>
+</div>
+<div class="bg-primary-container p-6 text-on-primary">
+<p class="font-headline text-lg italic mb-4">"A inteligência financeira não está em evitar o risco, mas em precificá-lo com absoluta maestria."</p>
+<span class="text-xs uppercase tracking-widest text-on-primary-container">— Editorial Boutique</span>
+</div>
+</aside>
+</section>
+<!-- Article Grid -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-20">
+<!-- Article 1 -->
+<article class="flex flex-col">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-high mb-6">
+<img class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" data-alt="Macro photo of high-quality fountain pen resting on a financial contract, shallow depth of field, warm boutique lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3us8LnjSNWVUJlaLwE22nzaH_nnHJhPRrXgAKyPI_A4msWkOArrtlHoFMqq7zytc9dyTQHv1f6lPSOTZ2OnGQDpFluZobiXdl5AzBO0VBH4Ck5rOSEcQFwm0ZeSKNQ3beZrLKEIZPqJEj6YRIyu0LkYJzoXXV7ZQe1id7khux7m0crf6r4EKe12hhjyptOw7g3OqUk9IKl6z6qqKXYk67NqObJqsGh3Ta1OwAL9K1oy6Ku2iokpkIx--hqjJuWt_rxTNst6VG5Y9J"/>
+</div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-[10px] uppercase tracking-widest text-on-primary-container font-bold">Crédito Estruturado</span>
+<span class="text-[10px] text-on-surface-variant">8 min</span>
+</div>
+<h3 class="font-headline text-3xl text-primary-container serif-tight mb-4">Consórcio vs. Financiamento: Onde está a verdadeira economia?</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Desmistificando o custo efetivo total entre as duas maiores modalidades de aquisição imobiliária no Brasil.</p>
+<a class="mt-auto inline-flex items-center text-primary-container font-bold text-xs uppercase tracking-widest hover:text-on-primary-fixed-variant group" href="#">
+                    Ler Artigo 
+                    <span class="material-symbols-outlined ml-2 text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</article>
+<!-- Article 2 -->
+<article class="flex flex-col">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-high mb-6">
+<img class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" data-alt="Clean abstract architectural shot of marble stairs spiraling upwards, representing financial growth and sophisticated geometry" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcnI8FJG_k779Ny83S9N3KVGajDFlYplXKfntm9ydoFkFJImQHYpkoP4WpeVCJyvpwmrqg7ehBy_32XxgjZIIgiGKjQiCOV_QFTT-bm3qsfcEq9pYkQRtOLp0OyPllIdQCR0VElr9cQ9UQkjZkkwwWrtOcJx3gMWHkS2_bHjJ1WnJdP1CGyo5kj4VFyzqn5x1CRgh2eCrcJ1Ep7TpU3vwlpbtbt0ipHSNTZb1XjRHJlwDBAM708EI-AD_9V8qJhgw9jcK3oOtgtBmY"/>
+</div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-[10px] uppercase tracking-widest text-on-primary-container font-bold">Matemática Financeira</span>
+<span class="text-[10px] text-on-surface-variant">10 min</span>
+</div>
+<h3 class="font-headline text-3xl text-primary-container serif-tight mb-4">A Matemática do Lance: Como acelerar a contemplação com inteligência financeira.</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Estratégias avançadas de alocação de liquidez para otimizar o tempo de acesso ao capital imobiliário.</p>
+<a class="mt-auto inline-flex items-center text-primary-container font-bold text-xs uppercase tracking-widest hover:text-on-primary-fixed-variant group" href="#">
+                    Ler Artigo 
+                    <span class="material-symbols-outlined ml-2 text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</article>
+<!-- Article 3 -->
+<article class="flex flex-col">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-high mb-6">
+<img class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" data-alt="Luxury residential property facade with clean lines and premium materials, golden hour sunlight hitting the glass windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSEyJpnsjargwExgOfXHIyAVxuHiedcSF4fD67eoJYW3jVObL49q7Z-ExZorsSvxXJo1oqs8nCQ9_BBzM7rkEJq5Ca8X5HbnvlJ5F1fbjaO11bbS79i0NuN83j01QmBU3tlLrw7fDlNoY4Ir4rbQAsQN2YSVDnuALNSa1bktafVzV33dcobSaaGIqB_C2cPJ7C6j5NrA8LIR30OnOzIOjBBKd5tEaUvJJf8lLvc6qW5XIzo4dcH8hHkp4yHfOV-RjsR0WfbCkv1kcG"/>
+</div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-[10px] uppercase tracking-widest text-on-primary-container font-bold">Ativos de Retenção</span>
+<span class="text-[10px] text-on-surface-variant">6 min</span>
+</div>
+<h3 class="font-headline text-3xl text-primary-container serif-tight mb-4">Uso do FGTS no Consórcio: Estratégias para o público imobiliário.</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Como transformar o saldo inativo em alavancagem para a compra do imóvel de alto padrão ou quitação de parcelas.</p>
+<a class="mt-auto inline-flex items-center text-primary-container font-bold text-xs uppercase tracking-widest hover:text-on-primary-fixed-variant group" href="#">
+                    Ler Artigo 
+                    <span class="material-symbols-outlined ml-2 text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</article>
+</section>
+<!-- Newsletter Section -->
+<section class="mt-32 p-12 bg-surface-container-low rounded-sm flex flex-col md:flex-row items-center justify-between border-l-4 border-tertiary-fixed-dim">
+<div class="md:max-w-md mb-8 md:mb-0">
+<h3 class="font-headline text-3xl text-primary-container serif-tight mb-2">Acesso Exclusivo</h3>
+<p class="text-on-surface-variant">Receba nossas análises semanais diretamente em seu e-mail privado. Conteúdo restrito para clientes e parceiros.</p>
+</div>
+<form class="flex w-full md:w-auto space-x-2">
+<input class="bg-white border-none focus:ring-1 focus:ring-tertiary-fixed-dim rounded-sm px-6 py-3 w-full md:w-80 font-body text-sm" placeholder="Endereço de e-mail institucional" type="email"/>
+<button class="bg-primary-container text-on-primary px-8 py-3 rounded-sm text-xs uppercase tracking-[0.15em] font-bold hover:bg-black transition-colors whitespace-nowrap">Inscrever</button>
+</form>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0A192F] dark:bg-[#050c16] w-full py-12 px-8 mt-20">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
+<div class="text-xl font-serif text-[#fcf9f8] serif-tight mb-6 md:mb-0">Boutique Financeira Editorial</div>
+<nav class="flex flex-wrap gap-8">
+<a class="text-slate-400 hover:text-[#e9c176] transition-colors text-sm" href="#">Privacidade</a>
+<a class="text-slate-400 hover:text-[#e9c176] transition-colors text-sm" href="#">Termos de Uso</a>
+<a class="text-slate-400 hover:text-[#e9c176] transition-colors text-sm" href="#">Compliance</a>
+<a class="text-slate-400 hover:text-[#e9c176] transition-colors text-sm" href="#">Governança</a>
+</nav>
+</div>
+<div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-widest text-slate-500">
+<p>© 2024 Boutique Financeira Editorial. Todos os direitos reservados.</p>
+<div class="flex space-x-6 mt-4 md:mt-0">
+<span class="hover:text-white cursor-pointer">LinkedIn</span>
+<span class="hover:text-white cursor-pointer">Instagram</span>
+<span class="hover:text-white cursor-pointer">Twitter (X)</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

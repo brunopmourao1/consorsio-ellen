@@ -1,0 +1,159 @@
+.legal-page {
+  padding: 160px 0 120px;
+  background-color: var(--color-background);
+  min-height: 100vh;
+}
+
+.legal-container {
+  max-width: 896px; /* max-w-4xl is ~896px */
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.legal-tag {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #5D4201; /* Tabela de cores manual conforme Stitch */
+  margin-bottom: 16px;
+}
+
+/* Use var tokens if available, otherwise fallbacks */
+:root {
+  --color-legal-tag: #5D4201;
+}
+
+.legal-headline {
+  font-family: 'Newsreader', serif;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  line-height: 1.1;
+  color: var(--color-primary-container, #0D1C32);
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.legal-intro {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary, #44474D);
+  font-style: italic;
+  margin-bottom: 80px;
+  max-width: 640px;
+}
+
+.prose-section {
+  color: var(--color-text-secondary, #44474D);
+  font-family: 'Manrope', sans-serif;
+}
+
+.prose-section article {
+  margin-bottom: 96px;
+}
+
+.prose-section h2 {
+  font-family: 'Newsreader', serif;
+  font-size: clamp(1.5rem, 3vw, 1.875rem);
+  font-weight: 600;
+  color: var(--color-primary, #000000);
+  border-bottom: 1px solid rgba(197, 198, 205, 0.3);
+  padding-bottom: 16px;
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
+
+.prose-section h3 {
+  font-family: 'Newsreader', serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-primary-container, #0D1C32);
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+.prose-section p {
+  margin-bottom: 24px;
+  line-height: 1.7;
+}
+
+.prose-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 24px;
+}
+
+.prose-section li {
+  margin-bottom: 8px;
+}
+
+.tonal-box {
+  background-color: var(--color-surface-container-low, #f6f3f2);
+  padding: 32px;
+  border-radius: var(--radius-lg, 8px);
+  margin: 40px 0;
+}
+
+.tonal-box h3 {
+  margin-top: 0;
+}
+
+.tonal-box p {
+  margin-bottom: 0;
+}
+
+/* Compliance Box - Editorial Highlight */
+.compliance-box {
+  background-color: var(--color-primary-container, #0D1C32);
+  color: #FFFFFF;
+  padding: 48px;
+  border-radius: var(--radius-lg, 8px);
+}
+
+.compliance-box h2 {
+  color: var(--color-accent, #E9C176) !important;
+  border: none !important;
+  margin-top: 0 !important;
+}
+
+.compliance-box p {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.compliance-footer {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.compliance-icon {
+  font-size: 40px !important;
+  color: var(--color-accent, #E9C176);
+  flex-shrink: 0;
+}
+
+.compliance-meta {
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.compliance-meta strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  .legal-page {
+    padding: 120px 0 80px;
+  }
+  
+  .legal-headline {
+    font-size: 2.25rem;
+  }
+  
+  .compliance-box {
+    padding: 32px;
+  }
+}

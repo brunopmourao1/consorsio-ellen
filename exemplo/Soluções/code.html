@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;1,400&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #fcf9f8;
+            color: #1b1b1b;
+        }
+        h1, h2, h3, .serif-quote {
+            font-family: 'Newsreader', serif;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#0d1c32",
+                    "on-primary-container": "#76849f",
+                    "surface": "#fcf9f8",
+                    "on-primary-fixed": "#0d1c32",
+                    "surface-dim": "#dcd9d9",
+                    "secondary-fixed": "#e5e2e1",
+                    "surface-container": "#f0eded",
+                    "on-tertiary-container": "#a17f3b",
+                    "primary-fixed": "#d6e3ff",
+                    "outline-variant": "#c5c6cd",
+                    "secondary-container": "#e2dfde",
+                    "error-container": "#ffdad6",
+                    "surface-bright": "#fcf9f8",
+                    "primary": "#000000",
+                    "on-secondary-container": "#636262",
+                    "outline": "#75777e",
+                    "inverse-on-surface": "#f3f0ef",
+                    "surface-container-highest": "#e5e2e1",
+                    "on-secondary-fixed": "#1b1b1b",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "on-tertiary-fixed": "#261900",
+                    "surface-container-high": "#eae7e7",
+                    "background": "#fcf9f8",
+                    "surface-tint": "#515f78",
+                    "on-tertiary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#e9c176",
+                    "secondary": "#5f5e5e",
+                    "primary-fixed-dim": "#b9c7e4",
+                    "on-surface": "#1b1b1b",
+                    "on-secondary-fixed-variant": "#474746",
+                    "on-secondary": "#ffffff",
+                    "on-surface-variant": "#44474d",
+                    "tertiary-container": "#261900",
+                    "on-error-container": "#93000a",
+                    "inverse-surface": "#313030",
+                    "tertiary": "#000000",
+                    "surface-variant": "#e5e2e1",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed": "#ffdea5",
+                    "inverse-primary": "#b9c7e4",
+                    "on-background": "#1b1b1b",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#f6f3f2",
+                    "on-tertiary-fixed-variant": "#5d4201",
+                    "on-primary-fixed-variant": "#39475f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        }
+      }
+    </script>
+</head>
+<body class="bg-surface selection:bg-tertiary-fixed-dim selection:text-on-tertiary-fixed">
+<!-- Top Navigation -->
+<header class="fixed top-0 w-full z-50 bg-[#fcf9f8]/80 dark:bg-[#0A192F]/80 backdrop-blur-md shadow-[0_10px_30px_-15px_rgba(10,25,47,0.06)]">
+<nav class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+<div class="text-2xl font-serif italic text-[#0A192F] dark:text-[#fcf9f8]">Ellen Stevão</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#39475f] dark:text-gray-400 hover:text-[#0A192F] transition-colors text-[14px] font-medium tracking-tight" href="#">Home</a>
+<a class="text-[#39475f] dark:text-gray-400 hover:text-[#0A192F] transition-colors text-[14px] font-medium tracking-tight" href="#">A Especialista</a>
+<a class="text-[#0A192F] dark:text-white font-bold border-b-2 border-[#0A192F] dark:border-[#fcf9f8] pb-1 text-[14px] tracking-tight" href="#">Soluções</a>
+<a class="text-[#39475f] dark:text-gray-400 hover:text-[#0A192F] transition-colors text-[14px] font-medium tracking-tight" href="#">Blog</a>
+<a class="text-[#39475f] dark:text-gray-400 hover:text-[#0A192F] transition-colors text-[14px] font-medium tracking-tight" href="#">Contato</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 text-[14px] font-medium tracking-tight transition-transform hover:scale-95 duration-200">Consultoria</button>
+</nav>
+</header>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 mb-24">
+<div class="editorial-grid">
+<div class="col-span-12 md:col-span-7">
+<h1 class="text-5xl md:text-7xl font-bold text-on-background leading-[1.1] mb-8">
+                        Soluções <span class="italic font-normal">Estratégicas</span>
+</h1>
+<p class="text-xl md:text-2xl text-on-surface-variant leading-relaxed font-body max-w-2xl">
+                        Estruturamos o consórcio como um instrumento de gestão de capital, focando em eficiência, previsibilidade e crescimento patrimonial.
+                    </p>
+</div>
+<div class="col-span-12 md:col-span-5 flex items-end">
+<div class="w-full h-[300px] bg-surface-container-low overflow-hidden relative group">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Modern architectural detail of a luxury financial building with clean lines and reflection of sunlight on glass" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYOqaLo1YpmdwQYduGGTXLr9JXqWXhjkTM5vC0IYtis1PNK9cFtNyj9dQlA7IWWMpZ-Mydshwsp75mEnhVj7YUA42r9MbffDaxOtusAr5EJmXrCbzG9TbWmotiBB_IpNYbJTthglyaLqZtPliyG5FQhdTYw1H0CCnsqi2_x77DBBjc91pUYzoqeGaiMxZua4KC7fMZcEKt9vWbrI0-_5QSvLFdDLLTap5No1hkCik-eFxF0Vnj-iA3oRPyL4Wu9YbN6mDSriUGP7iK"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Solutions Bento Grid -->
+<section class="max-w-7xl mx-auto px-8 mb-32">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Section 1: Imobiliário -->
+<div class="bg-surface-container-low p-12 flex flex-col justify-between min-h-[500px]">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-tertiary-fixed-dim" style="font-size: 32px;">apartment</span>
+<span class="text-xs uppercase tracking-widest font-bold text-on-primary-container">Estratégia 01</span>
+</div>
+<h2 class="text-3xl font-bold mb-6">Imobiliário e Alavancagem Patrimonial</h2>
+<p class="text-on-surface-variant leading-relaxed mb-8">
+                            Maximização de recursos para expansão imobiliária planejada, transformando passivos em ativos geradores de renda.
+                        </p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="w-1.5 h-1.5 bg-tertiary-fixed-dim rounded-full"></span> Urban &amp; Rural Acquisition
+                            </li>
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="w-1.5 h-1.5 bg-tertiary-fixed-dim rounded-full"></span> Debt Replacement Logic
+                            </li>
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="w-1.5 h-1.5 bg-tertiary-fixed-dim rounded-full"></span> Rental Income Engineering
+                            </li>
+</ul>
+</div>
+<div class="mt-12 h-40 overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-50" data-alt="Skyscraper glass facade reflecting a clear sky, symbolizing real estate growth and corporate stability" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDip4daC9NFXdf6oa9k1TVuUZx5nz2qiEE36ua_445XqeRLYn7ZjoaIuB0mdPw_iObE1FTJBFqbCZwSbU0Yuw94tYYhVxqkPfagu8jvLMn-o45_VM9XSo4-bsfQidrtkHz-wKBIPa89AEQpl5Pgc_azIPr0AcEHpe6fGGuIzftEhK3Rd9zMVL-Y_qqSt77U2b6DNpaYltvYy4Tep2VpX6xfG_vb5IK6aeAWzfPeZoirp2mEzkTAlB5CbnhU1V9V_v5_KVtv7DTeaBRW"/>
+</div>
+</div>
+<!-- Section 2: Frotas & Agro -->
+<div class="bg-primary-container text-surface p-12 flex flex-col justify-between min-h-[500px]">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-tertiary-fixed-dim" style="font-size: 32px;">agriculture</span>
+<span class="text-xs uppercase tracking-widest font-bold text-on-primary-container">Estratégia 02</span>
+</div>
+<h2 class="text-3xl font-bold mb-6 text-white">Frotas, Pesados e Agronegócio</h2>
+<p class="text-on-primary-container leading-relaxed mb-8">
+                            Soluções para o core business. Renovação de frota e mecanização com custo financeiro reduzido e fluxo de caixa preservado.
+                        </p>
+<ul class="space-y-4 text-surface/80">
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="material-symbols-outlined text-xs">check_circle</span> Strategic Fleet Renewal
+                            </li>
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="material-symbols-outlined text-xs">check_circle</span> Industrial Machines Procurement
+                            </li>
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="material-symbols-outlined text-xs">check_circle</span> Agribusiness Expansion
+                            </li>
+</ul>
+</div>
+<div class="mt-12 flex gap-4">
+<div class="flex-1 h-32 bg-white/5 overflow-hidden">
+<img class="w-full h-full object-cover grayscale" data-alt="Overhead view of a modern logistics fleet parked in perfect alignment, symbolizing organized scaling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxC-WMuzBLw70SmWjRf2o3WMR-Wq0pohpOEompc4BDUwLPkgzRHHDKdBW28NLbO1neN3zmFNdZr2zX6kTBK3SpJXPd0IxsRkYfbs_-9OvJD3KgvMUwyRzIqJCgj5A9YlJUKH4CMO6JKnaDyuvaDlEohogbEOSIhsiyGabC8QTqQ_dkCZ59h0Eqixou0jpTmD4VRGpGmf8Xxn8Jrp7CV1EZ-ctcJMQ0PWbEtfLwhupaMYu7FLEgETOkv7egYGvuxiwHdNOeEx78yGaF"/>
+</div>
+<div class="flex-1 h-32 bg-white/5 overflow-hidden">
+<img class="w-full h-full object-cover grayscale" data-alt="Powerful industrial agricultural machinery harvesting in a golden wheat field at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdbJFNvXUNJQtPYwMnKcbUNkSNHBFyl5wIAujpCYGxwYoz0t0X1fAyvtWIKY99c2qDfqsxg66PBugacctUj6HjpvkMmeVbsW5XxiywdOIP7UkwhZmKC3GRVrzBpvG0ucVUcfDtWo1DSDR_Yd2vT3VSoVz5N8myzvMlRhv3j3fr0x-2GN_lYztRmxCcyc26ejlLlThmr0Bnb45Op5fBR2BkUk1OPZFXcnfJxy5xgLbBUFOpjmilFHYJQrBHYvXsnjY7vJyoM5C4_oX2"/>
+</div>
+</div>
+</div>
+<!-- Section 3: Premium Lifestyle -->
+<div class="bg-surface-container-high p-12 flex flex-col md:flex-row gap-12 min-h-[400px] md:col-span-2">
+<div class="flex-1 flex flex-col justify-center">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-tertiary-fixed-dim" style="font-size: 32px;">directions_car</span>
+<span class="text-xs uppercase tracking-widest font-bold text-on-surface-variant">Estratégia 03</span>
+</div>
+<h2 class="text-3xl font-bold mb-6">Veículos Premium e Lifestyle</h2>
+<p class="text-on-surface-variant leading-relaxed">
+                            Acesso ao mercado de luxo através de planejamento inteligente. Substituição programada de ativos de alta performance com preservação de liquidez.
+                        </p>
+<div class="mt-8 flex gap-8">
+<div>
+<p class="text-2xl font-serif">Imported</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-tighter">Automobiles</p>
+</div>
+<div class="w-px h-12 bg-outline-variant/30"></div>
+<div>
+<p class="text-2xl font-serif">Nautical</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-tighter">Off-road</p>
+</div>
+</div>
+</div>
+<div class="flex-1 relative overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:scale-105 transition-transform duration-1000" data-alt="Side profile of a sleek luxury sports car in a minimalist dark garage with soft overhead lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAd2VVIqHQmAswVqK2lrx3ih9JY4n5itfsSyqng3FrY_DoDMUI22iz6Lewl__DhHpG4-eIk7qhVg5swu1eG73CSZMgHp82ZYQG2UyIcLXf-SRQ1LM03esS5GCaLQyWIlQji3sIZnkGYylUj2aYa5TRctGxjs_pCVQKnW8o5Spvr7uGmDPxlkS4wf8uhwQbqP_WA3w5I3XORV2UscRqrP8aLDkfYf0bS5Dqu_gvLILRjrgvXaMBxbabo86qyCftKfP3UWze75PKzaF0s"/>
+<div class="absolute inset-0 bg-primary-container/20 mix-blend-multiply"></div>
+</div>
+</div>
+<!-- Section 4: Estruturação de Ativos -->
+<div class="bg-white p-12 border-b border-outline-variant/15 md:col-span-2">
+<div class="editorial-grid">
+<div class="col-span-12 md:col-span-6">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-tertiary-fixed-dim" style="font-size: 32px;">flight</span>
+<span class="text-xs uppercase tracking-widest font-bold text-on-surface-variant">Estratégia 04</span>
+</div>
+<h2 class="text-4xl font-bold mb-8">Estruturação de Ativos e Soluções Especiais</h2>
+<p class="text-on-surface-variant leading-relaxed text-lg mb-10">
+                                Projetos de alta complexidade que exigem modelagem financeira sob medida. Da aviação executiva ao compartilhamento inteligente de ativos.
+                            </p>
+<button class="flex items-center gap-4 text-primary font-bold group">
+                                Solicitar Análise Especial
+                                <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+</button>
+</div>
+<div class="col-span-12 md:col-span-6 grid grid-cols-2 gap-4">
+<div class="bg-surface-container-low p-6 flex flex-col justify-between">
+<p class="text-sm font-bold uppercase tracking-widest text-on-primary-container mb-4">Aeronaves</p>
+<span class="text-on-surface-variant text-sm">Estruturação para jatos executivos e turboélices.</span>
+</div>
+<div class="bg-surface-container-low p-6 flex flex-col justify-between">
+<p class="text-sm font-bold uppercase tracking-widest text-on-primary-container mb-4">Industrial</p>
+<span class="text-on-surface-variant text-sm">Equipamentos de alto valor agregado para indústria.</span>
+</div>
+<div class="bg-surface-container-low p-6 flex flex-col justify-between">
+<p class="text-sm font-bold uppercase tracking-widest text-on-primary-container mb-4">Fractional</p>
+<span class="text-on-surface-variant text-sm">Soluções de propriedade compartilhada estruturada.</span>
+</div>
+<div class="bg-primary-container p-6 flex flex-col justify-between text-white">
+<p class="text-sm font-bold uppercase tracking-widest text-tertiary-fixed-dim mb-4">Consultoria</p>
+<span class="text-white/70 text-sm">Desenvolvimento de grupos exclusivos.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Narrative -->
+<section class="max-w-7xl mx-auto px-8 mb-32">
+<div class="bg-surface-container p-16 md:p-24 relative overflow-hidden">
+<div class="relative z-10 max-w-3xl">
+<h2 class="text-4xl md:text-5xl font-bold leading-tight mb-8">A precisão de um <span class="italic font-normal">Private Bank</span>, a eficiência do consórcio.</h2>
+<p class="text-lg text-on-surface-variant mb-12 leading-relaxed">
+                        Nossa abordagem remove a subjetividade e foca em métricas reais de retorno sobre patrimônio. Agende uma reunião técnica para entender como estas ferramentas se aplicam ao seu balanço.
+                    </p>
+<div class="flex flex-wrap gap-6">
+<button class="bg-primary text-on-primary px-10 py-4 font-bold tracking-tight hover:opacity-90 transition-opacity">
+                            Agendar Reunião Estratégica
+                        </button>
+<button class="text-primary font-bold px-10 py-4 underline underline-offset-8">
+                            Baixar Prospecto de Soluções
+                        </button>
+</div>
+</div>
+<div class="absolute top-0 right-0 w-1/3 h-full hidden lg:block">
+<img class="w-full h-full object-cover grayscale mix-blend-overlay opacity-30" data-alt="Macro photo of high-quality cream colored paper with subtle texture and shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1dnFpDn9zuFj3AMJHupNLjWwPRapMPb7p9BF1TtLsOP6qxmmkK699_rkQeQnNy0gJxTcoJeRGpSrU5DthVNb9BpUHqnshBNsV7vro5ijShwkCxFqnJcF6q_MPUxD7osoxSfSBPVbVHvQyHJjBqd4ATgTvT8OWaMFag5VbB27XN_fNiHzH6M55ra2-bA2TLL7xWdpevfb2G0eSG-g2_kCuFHydB8vyzyrv4SrU9v0fX8ylSp7YENb1xjaNduzcGWve0r2QNlOE-ZzT"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0A192F] text-[#fcf9f8] w-full pt-20 pb-10">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12 border-t border-white/5 pt-16">
+<div>
+<span class="text-xl font-serif text-white mb-4 block">Ellen Stevão</span>
+<p class="text-gray-400 text-sm leading-relaxed max-w-xs">
+                    Consultoria especializada em alavancagem patrimonial e gestão de capital via consórcios estruturados.
+                </p>
+</div>
+<div>
+<h4 class="font-serif text-lg text-white mb-6">Institutional</h4>
+<nav class="flex flex-col gap-4">
+<a class="text-gray-400 hover:text-white transition-colors text-sm" href="#">A Especialista</a>
+<a class="text-gray-400 hover:text-white transition-colors text-sm" href="#">Soluções</a>
+<a class="text-gray-400 hover:text-white transition-colors text-sm" href="#">Metodologia</a>
+</nav>
+</div>
+<div>
+<h4 class="font-serif text-lg text-white mb-6">Social &amp; Contact</h4>
+<div class="flex gap-6 mb-8">
+<a class="text-gray-400 hover:text-white transition-colors" href="#">LinkedIn</a>
+<a class="text-gray-400 hover:text-white transition-colors" href="#">Instagram</a>
+<a class="text-gray-400 hover:text-white transition-colors" href="#">WhatsApp</a>
+</div>
+<div class="text-sm text-gray-500">
+                    Sua jornada patrimonial começa com uma decisão estratégica.
+                </div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-20 pt-8 border-t border-white/5">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-xs text-gray-500">© 2024 Ellen Stevão - Consórcio. Autorizado pelo Banco Central do Brasil.</p>
+<div class="flex gap-8">
+<a class="text-xs text-gray-500 hover:text-white" href="#">Termos de Uso</a>
+<a class="text-xs text-gray-500 hover:text-white" href="#">Política de Privacidade</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
