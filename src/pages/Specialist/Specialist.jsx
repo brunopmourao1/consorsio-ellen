@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import FadeIn from '../../components/ui/FadeIn';
-import ellenImg from '../../assets/images/ellen-3.png';
+import ellenImg from '../../assets/images/Ellen-3.png';
 import './Specialist.css';
 
 const Specialist = () => {
