@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import FadeIn from '../../components/ui/FadeIn';
-import lanceImg from '../../assets/images/lance.png';
+import lanceImg from '../../assets/images/Lance.png';
 import blogImg1 from '../../assets/images/blog-1.png';
 import blogImg2 from '../../assets/images/blog-2.png';
 import blogImg3 from '../../assets/images/blog-3.png';
