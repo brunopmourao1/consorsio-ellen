@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import FadeIn from '../../components/ui/FadeIn';
 import ServiceCard from '../../components/ui/ServiceCard';
-import ellenHero from '../../assets/images/ellen-stevao.png';
-import ellenPreview from '../../assets/images/ellen-stevao.png';
+import ellenHero from '../../assets/images/Ellen-1.png';
+import ellenPreview from '../../assets/images/Ellen-2.png';
 import blogImg1 from '../../assets/images/blog-1.png';
 import blogImg2 from '../../assets/images/blog-2.png';
 import blogImg3 from '../../assets/images/blog-3.png';
@@ -40,12 +40,12 @@ const Home = () => {
   return (
     <div className="home-page-v6">
       <main>
-        
+
         {/* 1. HERO SECTION: Reconstrução Limpa Lado-a-Lado */}
         <section className="hero-section-clean">
           <div className="hero-container-standard">
             <div className="hero-grid-main">
-              
+
               <div className="hero-text-block">
                 <FadeIn direction="up">
                   <h1 className="hero-headline-luxe">
@@ -56,7 +56,7 @@ const Home = () => {
                   </Link>
                 </FadeIn>
               </div>
-              
+
               <div className="hero-image-block">
                 <FadeIn delay={300} direction="left">
                   <div className="hero-portrait-frame">
@@ -136,7 +136,7 @@ const Home = () => {
               <h2 className="section-headline-serif">Estratégias Sob Medida</h2>
               <p className="section-subheadline-v5">Soluções estruturadas para diferentes horizontes de investimento no <strong>Consórcio Ellen</strong>.</p>
             </FadeIn>
-            
+
             <div className="solutions-bento-grid">
               {solutions.map((svc, idx) => (
                 <FadeIn key={svc.title} delay={idx * 150}>

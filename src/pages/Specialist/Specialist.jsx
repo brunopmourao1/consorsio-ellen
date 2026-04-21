@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import FadeIn from '../../components/ui/FadeIn';
-import ellenImg from '../../assets/images/ellen-stevao.png';
+import ellenImg from '../../assets/images/ellen-3.png';
 import './Specialist.css';
 
 const Specialist = () => {
@@ -16,7 +16,7 @@ const Specialist = () => {
                 <FadeIn direction="up">
                   <span className="section-tag">Sobre a Fundadora</span>
                   <h1 className="hero-headline">
-                    Autoridade e <br/> <span className="serif-italic">Excelência</span> no Mercado.
+                    Autoridade e <br /> <span className="serif-italic">Excelência</span> no Mercado.
                   </h1>
                   <p className="hero-description">
                     Formada pelo Insper, com mais de 14 anos de atuação estratégica no mercado financeiro brasileiro, transformando patrimônio em legados sólidos.
@@ -26,10 +26,10 @@ const Specialist = () => {
               <div className="hero-image-wrapper">
                 <FadeIn delay={300} direction="left">
                   <div className="portrait-container">
-                    <img 
-                      src={ellenImg} 
-                      alt="Ellen Stevão Portrait" 
-                      className="portrait-image" 
+                    <img
+                      src={ellenImg}
+                      alt="Ellen Stevão Portrait"
+                      className="portrait-image"
                     />
                   </div>
                 </FadeIn>
@@ -70,7 +70,7 @@ const Specialist = () => {
             <div className="bio-asymmetric-grid">
               <div className="bio-narrative">
                 <FadeIn>
-                  <h2 className="bio-headline">Uma jornada moldada pela <br/>precisão técnica.</h2>
+                  <h2 className="bio-headline">Uma jornada moldada pela <br />precisão técnica.</h2>
                   <div className="bio-copy">
                     <p>
                       Minha trajetória no mercado financeiro começou há mais de uma década, movida pelo desejo de desmistificar a gestão de ativos e oferecer às famílias brasileiras o mesmo nível de sofisticação encontrado em Family Offices internacionais.

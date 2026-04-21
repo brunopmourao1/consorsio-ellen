@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import FadeIn from '../../components/ui/FadeIn';
+import lanceImg from '../../assets/images/lance.png';
 import blogImg1 from '../../assets/images/blog-1.png';
 import blogImg2 from '../../assets/images/blog-2.png';
 import blogImg3 from '../../assets/images/blog-3.png';
@@ -14,7 +15,7 @@ const Blog = () => {
       category: 'Educação Financeira',
       readTime: '12 min',
       date: 'Maio 2026',
-      image: blogImg1,
+      image: lanceImg,
       excerpt: 'Entenda como a alocação de lances e a escolha de grupos saudáveis transformam o consórcio em um investimento focado em inteligência patrimonial.'
     },
     {
@@ -23,7 +24,7 @@ const Blog = () => {
       category: 'Análise Técnica',
       readTime: '8 min',
       date: 'Abril 2026',
-      image: blogImg2,
+      image: blogImg1,
       excerpt: 'Um comparativo detalhado sobre como a ausência de juros compostos pode acelerar sua alavancagem patrimonial de forma segura.'
     },
     {
@@ -32,7 +33,7 @@ const Blog = () => {
       category: 'Estratégia Especial',
       readTime: '10 min',
       date: 'Março 2026',
-      image: blogImg3,
+      image: blogImg2,
       excerpt: 'Como grandes produtores estão utilizando o consórcio para renovação tecnológica sem comprometer a liquidez dos seus ativos.'
     },
     {
@@ -41,7 +42,7 @@ const Blog = () => {
       category: 'Lifestyle & Investimento',
       readTime: '6 min',
       date: 'Fevereiro 2026',
-      image: blogImg1,
+      image: blogImg3,
       excerpt: 'Por que o tempo é o seu maior aliado quando se trata de adquirir propriedades de alto padrão com eficiência financeira absoluta.'
     }
   ];
@@ -52,7 +53,7 @@ const Blog = () => {
   return (
     <div className="blog-page">
       <main className="container blog-main-content">
-        
+
         {/* Section Header */}
         <header className="blog-section-header">
           <FadeIn direction="up">
@@ -84,7 +85,7 @@ const Blog = () => {
               </div>
             </FadeIn>
           </div>
-          
+
           <aside className="featured-aside">
             <FadeIn delay={400} direction="left">
               <div className="aside-box">
@@ -103,7 +104,7 @@ const Blog = () => {
                     <h4>Impacto do Selic nas taxas de consórcio atuais.</h4>
                   </li>
                 </ul>
-                
+
                 <div className="quote-box">
                   <p className="quote-text">"A inteligência financeira não está em evitar o risco, mas em precificá-lo com absoluta maestria."</p>
                   <span className="quote-author">— Editorial Boutique</span>
@@ -128,7 +129,7 @@ const Blog = () => {
                 <h3 className="article-title">{post.title}</h3>
                 <p className="article-excerpt">{post.excerpt}</p>
                 <Link to={`/blog/${post.id}`} className="article-link">
-                  Ler Artigo 
+                  Ler Artigo
                   <span className="material-symbols-outlined">arrow_forward</span>
                 </Link>
               </article>
@@ -145,11 +146,11 @@ const Blog = () => {
                 <p className="newsletter-desc">Receba nossas análises semanais diretamente em seu e-mail privado. Conteúdo restrito para clientes do <strong>Consórcio Ellen</strong>.</p>
               </div>
               <form className="newsletter-form" onSubmit={(e) => e.preventDefault()}>
-                <input 
-                  type="email" 
-                  className="newsletter-input" 
-                  placeholder="Endereço de e-mail institucional" 
-                  required 
+                <input
+                  type="email"
+                  className="newsletter-input"
+                  placeholder="Endereço de e-mail institucional"
+                  required
                 />
                 <button type="submit" className="newsletter-submit">Inscrever</button>
               </form>

@@ -2,16 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import FadeIn from '../../components/ui/FadeIn';
 import realEstateImg from '../../assets/images/real-estate.png';
-import fleetImg from '../../assets/images/fleet.png';
-import carImg from '../../assets/images/car.png';
-import wealthImg from '../../assets/images/wealth.png';
+import fleetImg from '../../assets/images/trator.png';
+import fleetImg2 from '../../assets/images/Aeronave.png';
+import carImg from '../../assets/images/carro.png';
+import wealthImg from '../../assets/images/xadrez.png';
 import './Solutions.css';
 
 const Solutions = () => {
   return (
     <div className="solutions-page">
       <main className="solutions-main-content">
-        
+
         {/* 1. HERO SECTION */}
         <section className="solutions-hero">
           <div className="container">
@@ -45,7 +46,7 @@ const Solutions = () => {
         <section className="solutions-bento">
           <div className="container">
             <div className="bento-grid">
-              
+
               {/* Section 1: Imobiliário */}
               <FadeIn direction="up">
                 <div className="bento-item bento-light">
@@ -94,7 +95,7 @@ const Solutions = () => {
                   </div>
                   <div className="item-footer-dual-image">
                     <img src={fleetImg} alt="Frota" />
-                    <img src={fleetImg} alt="Agronegócio" />
+                    <img src={fleetImg2} alt="Agronegócio" />
                   </div>
                 </div>
               </FadeIn>
@@ -145,7 +146,7 @@ const Solutions = () => {
                         Projetos de alta complexidade que exigem modelagem financeira sob medida. Da aviação executiva ao compartilhamento inteligente de ativos.
                       </p>
                       <Link to="/contato" className="interactive-link">
-                        Solicitar Análise Especial 
+                        Solicitar Análise Especial
                         <span className="material-symbols-outlined">arrow_right_alt</span>
                       </Link>
                     </div>
